@@ -150,6 +150,7 @@ var StateFromStore = function(stateDescriptors) {
         },
 
         componentDidMount: function() {
+            this.setState(this.getInitialState());
             addChangeListeners(this);
         },
 
